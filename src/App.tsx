@@ -3,9 +3,13 @@ import './App.css';
 import { observer, inject } from 'mobx-react';
 import { IMobxStore } from './stores/mobxStore';
 
+interface AppProps {
+  mobxStore?: IMobxStore
+}
+
 @inject('mobxStore')
 @observer
-class App extends Component<{mobxStore?: IMobxStore}> {
+class App extends Component<AppProps> {
   render() {
     const {greeting} = this.props.mobxStore!;
     

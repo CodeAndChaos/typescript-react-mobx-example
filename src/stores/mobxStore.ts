@@ -12,7 +12,7 @@ export class MobxStore implements IMobxStore {
 
     @computed 
     public get greeting():string {
-        return `Hello ${this.name}!`;
+        return `Hello ${this.name}`;
     }
 
     @action.bound
