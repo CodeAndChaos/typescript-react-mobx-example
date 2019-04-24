@@ -5,7 +5,7 @@ interface Stores {
     [key: string]: any;
 }
 
-export const stores:Stores = {
+export const stores: Stores = {
     mobxStore: new MobxStore()
 }
 

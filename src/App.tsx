@@ -11,23 +11,25 @@ interface AppProps {
 @observer
 class App extends Component<AppProps> {
   render() {
-    const {greeting} = this.props.mobxStore!;
-    
+    const { greeting } = this.props.mobxStore!;
+
     return (
       <div className="App">
         <header className="App-header">
-            {greeting}
-          <button onClick={this.clickHandler}>Change Greeting</button>
+          {greeting}
+          <button onClick={this.clickHandler} value="Bob">Change Greeting</button>
+          <button onClick={this.clickHandler} value="World">Reset</button>
         </header>
-        
+
       </div>
     );
   }
 
-  private clickHandler = () =>{
-    const {setName} = this.props.mobxStore!;
-    setName("Bob");
+  private clickHandler = (e: React.SyntheticEvent<HTMLButtonElement>) => {
+    const { setName } = this.props.mobxStore!;
+    setName(e.currentTarget.value);
   }
+
 }
 
 export default App;
