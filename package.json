@@ -2,7 +2,7 @@
   "name": "mobx-example",
   "version": "0.1.1",
   "dependencies": {
-    "mobx": "^5.9.4",
+    "mobx": "^5.11.0",
     "mobx-persist": "^0.4.1",
     "mobx-react": "^5.4.3",
     "react": "^16.8.6",
