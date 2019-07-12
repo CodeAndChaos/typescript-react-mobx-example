@@ -1,6 +1,6 @@
 {
   "name": "mobx-example",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "mobx": "^5.11.0",
     "mobx-persist": "^0.4.1",
