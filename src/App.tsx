@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import './App.css';
-import { observer, inject } from 'mobx-react';
-import { IMobxStore } from './stores/mobxStore';
+import React, { Component } from "react";
+import "./App.css";
+import { observer, inject } from "mobx-react";
+import { IMobxStore } from "./stores/mobxStore";
 
 interface AppProps {
-  mobxStore?: IMobxStore
+  mobxStore?: IMobxStore;
 }
 
-@inject('mobxStore')
+@inject("mobxStore")
 @observer
 class App extends Component<AppProps> {
   render() {
@@ -17,10 +17,13 @@ class App extends Component<AppProps> {
       <div className="App">
         <header className="App-header">
           {greeting}
-          <button onClick={this.clickHandler} value="Bob">Change Greeting</button>
-          <button onClick={this.clickHandler} value="World">Reset</button>
+          <button onClick={this.clickHandler} value="Bob">
+            Change Greeting
+          </button>
+          <button onClick={this.clickHandler} value="World">
+            Reset
+          </button>
         </header>
-
       </div>
     );
   }
@@ -28,8 +31,7 @@ class App extends Component<AppProps> {
   private clickHandler = (e: React.SyntheticEvent<HTMLButtonElement>) => {
     const { setName } = this.props.mobxStore!;
     setName(e.currentTarget.value);
-  }
-
+  };
 }
 
 export default App;
