@@ -2,5 +2,5 @@ When looking around for example applications that use [Mobx 5.x](http://mobx.js.
 
 In my example I will use MOBX to display "Hello World!". It should showcase a couple of core concepts you will be using in an mobx application.
 
-Read More about this example [here](https://nealbuerger.com/2018/11/getting-started-with-mobx5-react16-and-typescript3.html).
+Read More about this example [here](https://codeandchaos.com/coding/typescript/2018-11-11-getting-started-with-mobx5-react16-and-typescript3/).
 
